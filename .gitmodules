@@ -1,0 +1,3 @@
+[submodule "lab2/third_party/navie_stocks_aero"]
+	path = lab2/third_party/navie_stocks_aero
+	url = https://github.com/Chessmatus/navie-stocks-aero.git

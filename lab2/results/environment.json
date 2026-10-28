@@ -1,0 +1,65 @@
+{
+ "python": "3.13.9",
+ "numpy": "2.5.3",
+ "platform": "macOS-15.3.1-arm64-arm-64bit-Mach-O",
+ "upstream": {
+  "url": "https://github.com/Chessmatus/navie-stocks-aero",
+  "commit": "13e4e8faf8154baa677e40da4817a32c883ab3ed",
+  "sha256": {
+   "lab01/graphs.py": "52aa58334c80d9fd8fe51de7be948c7495d42ea3d5285460a3bee38e46a694e6",
+   "lab01/experiment.py": "8477df8229f6b5d7a467be5f8c0d83f7a37c25d618da82d19b5a5a3902dd1ab4",
+   "fetch_experiment.py": "242583cf841988192d62481f6c36eeb5513f1fc278cb3e3eadcfd152cd29ae14",
+   "data/turbine_1L/archive_index.json": "b8f9f3ef5160afc140175d9c2080df8f21260e39508163b6a96d25082abdeeea"
+  }
+ },
+ "plan": {
+  "ks": [
+   3.0,
+   4.0,
+   5.0,
+   7.0,
+   10.0,
+   15.0,
+   20.0,
+   30.0
+  ],
+  "k_sweep_q": 0.05,
+  "qs": [
+   0.0001,
+   0.0002,
+   0.0005,
+   0.001,
+   0.002,
+   0.005,
+   0.01,
+   0.02,
+   0.05,
+   0.1,
+   0.2,
+   0.5,
+   1.0
+  ],
+  "q_sweep_k": 10.0,
+  "seeds": 10,
+  "placebo_seeds": 10,
+  "n_boot": 1000,
+  "seed": 20261028
+ },
+ "weak_form": {
+  "synthetic": {
+   "mx": 8,
+   "mt": 8,
+   "stride_x": 3,
+   "stride_t": 8,
+   "power": 7
+  },
+  "real": {
+   "mx": 6,
+   "mt": 10,
+   "stride_x": 3,
+   "stride_t": 10,
+   "power": 7
+  }
+ },
+ "seconds_total": 110.2
+}

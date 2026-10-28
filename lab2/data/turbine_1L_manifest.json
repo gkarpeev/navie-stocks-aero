@@ -1,0 +1,535 @@
+{
+ "dataset_doi": "10.18710/SX0ZQT",
+ "case": "1L",
+ "archive": "1WT_rand_100_2D.zip",
+ "download": "HTTP byte ranges with ZIP CRC32 check (LR1 fetch_experiment.py)",
+ "upstream": {
+  "url": "https://github.com/Chessmatus/navie-stocks-aero",
+  "commit": "13e4e8faf8154baa677e40da4817a32c883ab3ed",
+  "sha256": {
+   "lab01/graphs.py": "52aa58334c80d9fd8fe51de7be948c7495d42ea3d5285460a3bee38e46a694e6",
+   "lab01/experiment.py": "8477df8229f6b5d7a467be5f8c0d83f7a37c25d618da82d19b5a5a3902dd1ab4",
+   "fetch_experiment.py": "242583cf841988192d62481f6c36eeb5513f1fc278cb3e3eadcfd152cd29ae14",
+   "data/turbine_1L/archive_index.json": "b8f9f3ef5160afc140175d9c2080df8f21260e39508163b6a96d25082abdeeea"
+  }
+ },
+ "frames": [
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02732.txt",
+   "bytes": 43727354,
+   "crc32": 3557333412,
+   "sha256": "a29e152e9bcf893e050ac73a7896ffbf149e25b53b154af76b0c6da2ddb4fd0a"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02733.txt",
+   "bytes": 43734581,
+   "crc32": 1467698151,
+   "sha256": "2bc4832c8a6c4dfe3f5483d696aa736db2e4319b770c1b28eaa654736fdab41e"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02734.txt",
+   "bytes": 43735049,
+   "crc32": 314374268,
+   "sha256": "8d42ed73ff58436826ad104de7b78a8459feed4c35482e674cb65c68a12e54fa"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02735.txt",
+   "bytes": 43729693,
+   "crc32": 3398431930,
+   "sha256": "131da305f36940a2e444f35526fca0d188c5b5fe2b7c9ec8d5b7531619846c3b"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02736.txt",
+   "bytes": 43712695,
+   "crc32": 54535388,
+   "sha256": "f86b579ed592bef404643038efd715ca1b96648e41ef5f0a87d97feca56e5454"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02737.txt",
+   "bytes": 43724073,
+   "crc32": 3989706055,
+   "sha256": "217a1527c19a1974bb6e08e4bcf0100e3a27ece69a804f394316cf1ae6a87fb0"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02738.txt",
+   "bytes": 43739274,
+   "crc32": 2364923221,
+   "sha256": "6cea01ee23944802a48eb38ac175bca935046d16eafcac1a70d8bce977461e42"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02739.txt",
+   "bytes": 43748683,
+   "crc32": 1529649350,
+   "sha256": "85ee7879f56316d0d9395dae23eb831751e99931a2fd86ba8586f562c155dccf"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02740.txt",
+   "bytes": 43743238,
+   "crc32": 1895493637,
+   "sha256": "8d8d73015d23cf26fc576cb2dcbc58f1dc8e23b1c42f26f60bcaf4d9d5545886"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02741.txt",
+   "bytes": 43748654,
+   "crc32": 3678149117,
+   "sha256": "d15d6403dbb186c6de554b4c10b7072b594e841fbdfbd7b980e1b8e58cdd9ca5"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02742.txt",
+   "bytes": 43732631,
+   "crc32": 2722787487,
+   "sha256": "cd80cbc5374f1583131951e11de5e2acf94250f4a375a551c62deef2b845f28b"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02743.txt",
+   "bytes": 43740566,
+   "crc32": 2886153242,
+   "sha256": "a474f93d9f79698dac81bbfdc2056156767bb542ca93407739a0d1679f39b269"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02744.txt",
+   "bytes": 43745395,
+   "crc32": 1087439359,
+   "sha256": "e66e22f6226a8fec9dcb7eb6ffe6844afff0a741d32933cb09ff27d3c819fa75"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02745.txt",
+   "bytes": 43730831,
+   "crc32": 3801374403,
+   "sha256": "f74733d07b44af507514dbe1e36f7d144340822c095ed139f05f70b3a16d2278"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02746.txt",
+   "bytes": 43746266,
+   "crc32": 2511600810,
+   "sha256": "a7f3417499fa6f1b5215a1d5c84dd5f30884164acf92e59c82e0ee3fd64667be"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02747.txt",
+   "bytes": 43726167,
+   "crc32": 2353992551,
+   "sha256": "5f2a1ec05427411e71d71fee4141149e18dcf53e30a11feed78af69a0bc30601"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02748.txt",
+   "bytes": 43724890,
+   "crc32": 3819370445,
+   "sha256": "ea172a3911d6f5a04b1f531e73e3ad5591750ee96daaeef7c3e6f33e983d4d8b"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02749.txt",
+   "bytes": 43726227,
+   "crc32": 1573590053,
+   "sha256": "0f1668ebf9ba9f3e4c26e85064c9ac0547666e93822a50ad75b7a50fad0fb344"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02750.txt",
+   "bytes": 43740121,
+   "crc32": 1091379498,
+   "sha256": "6cc7347ce75873a9803eba47e0c63ed6bbbbb772102e88d039d1e604be35c45b"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02751.txt",
+   "bytes": 43715695,
+   "crc32": 1895439073,
+   "sha256": "0fe176103e2db0f402df0af28401d45e9932195cf8911a237e05dd38d85b9e8d"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02752.txt",
+   "bytes": 43708589,
+   "crc32": 814592411,
+   "sha256": "cddb39537bbafe1ee4aa0422bf44bb9f7e8b0255235d1f648416cabc6ccd45ba"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02753.txt",
+   "bytes": 43721845,
+   "crc32": 3716455003,
+   "sha256": "c5ed9f1feb412d6d52a0b495478c810c64104ce7d66227673bee0ca5ba55e38d"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02754.txt",
+   "bytes": 43747456,
+   "crc32": 3115320787,
+   "sha256": "77db094b8b84d5ff7d0af4d2487737ed7e47692b9c44e0d8a7cc906a84c3c60e"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02755.txt",
+   "bytes": 43760666,
+   "crc32": 4209777718,
+   "sha256": "d06a11fa215ea963c9870e5787b331ed3f15a35d239d430cf318abb8994a29dd"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02756.txt",
+   "bytes": 43766181,
+   "crc32": 4061679290,
+   "sha256": "e01175324a0b8c91d55ac06f766775870ede924007f5163633a7a8bcd34e1e98"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02757.txt",
+   "bytes": 43741689,
+   "crc32": 410600781,
+   "sha256": "989a040509c8a2d89b5a5cb33de8d8a959ca7831d844e083b7304b3b73422b38"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02758.txt",
+   "bytes": 43750218,
+   "crc32": 1764946618,
+   "sha256": "dcc1caa121126110f1d09f083224fe4d7f039e0510c98a54803093faf2067bb0"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02759.txt",
+   "bytes": 43751727,
+   "crc32": 3551973138,
+   "sha256": "8c8cf58ea7b6b6475809d9f6e064757a9c3668904e388e9567baa9c88fff64f2"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02760.txt",
+   "bytes": 43743206,
+   "crc32": 4111682384,
+   "sha256": "ec2cef6fe2b9dc426c9991d26c5e8a747a7381ca7aaed7df320a8b35dc7363b0"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02761.txt",
+   "bytes": 43728882,
+   "crc32": 2128854340,
+   "sha256": "30ee75380300b9b137e532b74fe48a5b6e230669571dbcfc6e2536c240704366"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02762.txt",
+   "bytes": 43749086,
+   "crc32": 1521594922,
+   "sha256": "fa004d11001c90eb325cb7432ac2a19eb5078a4690139613b3510e1972cd25a9"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02763.txt",
+   "bytes": 43748315,
+   "crc32": 852757273,
+   "sha256": "0ad53d40a73dfd6ae9d37ff0b83a9442ed55a0f5850f3c803b363713fb695cb1"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02764.txt",
+   "bytes": 43748357,
+   "crc32": 2270109755,
+   "sha256": "71c8276e4519c43cdb1c0c30f893daee59767b8e954c2d85aa58a55343fde13d"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02765.txt",
+   "bytes": 43727764,
+   "crc32": 908758556,
+   "sha256": "999e09bff415e6d292b88199796629b81807d47bc6dc41c8f9c0c3ce1fe186ad"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02766.txt",
+   "bytes": 43746258,
+   "crc32": 1037307891,
+   "sha256": "9036116808b686c551257663aa64edd04722717c7f78213078c43e12bd2f205b"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02767.txt",
+   "bytes": 43748300,
+   "crc32": 941040546,
+   "sha256": "9378fdde4f080b5d37cd2635e35da6a27d419aa301dfdb7545f94dd1accd62ae"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02768.txt",
+   "bytes": 43756426,
+   "crc32": 210263159,
+   "sha256": "419041bcd96b6223d79f3b156b1833d559349f19ec27accd40fcb43518bad0c8"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02769.txt",
+   "bytes": 43763192,
+   "crc32": 2526366595,
+   "sha256": "9c46990255599f42d4c21864f2967095ce5b8e0ae8b7a334a2590d2e513b53ba"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02770.txt",
+   "bytes": 43773981,
+   "crc32": 1107832683,
+   "sha256": "4d38dd110512c1f51aa341f81d699ff5f77a0625106822a4f98c445ea3dfc74d"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02771.txt",
+   "bytes": 43768426,
+   "crc32": 3886328720,
+   "sha256": "145b425f5b322daac89cc48c92a220727952c45f1ef2df04ee37c26c02b8ec41"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02772.txt",
+   "bytes": 43766975,
+   "crc32": 3908685720,
+   "sha256": "eeb33adc2db778ff99152a834405aa38af144c5c7e89cd554d6f56c213c8e6c4"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02773.txt",
+   "bytes": 43757613,
+   "crc32": 1942792231,
+   "sha256": "242761a7e7c8b7bff43b9d86b1531f00f28150087574efefebe3ddbf9c20ccb4"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02774.txt",
+   "bytes": 43739911,
+   "crc32": 607793785,
+   "sha256": "911ff3b3f310c8825ac1c9cc731effdf961f267e5fc4881fec4e2e03c369107f"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02775.txt",
+   "bytes": 43731945,
+   "crc32": 3812633706,
+   "sha256": "08cb5cdc565c7f6929a3b6d53f4de49408aedd2a2bce63baa45b065de11d0874"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02776.txt",
+   "bytes": 43772313,
+   "crc32": 588595561,
+   "sha256": "6aee12f827cbad12b2648a67912f6c0cfcaef917ec0264d8fb5c39f8eacbaf90"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02777.txt",
+   "bytes": 43766881,
+   "crc32": 2522513070,
+   "sha256": "08139507642edeb133ef4128af20c2e5c85e0b78aa816984cd28a069ec2a196a"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02778.txt",
+   "bytes": 43774401,
+   "crc32": 2342775006,
+   "sha256": "8cfd91cf3d5b1da5a7e35dd05d9b292897842ee642e6a2061b29836e4e0fef37"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02779.txt",
+   "bytes": 43794928,
+   "crc32": 2543110053,
+   "sha256": "58cf4808077e7a9bfd88fab3842c2ac7e15972b16954fc1cb5121f04d8770db6"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02780.txt",
+   "bytes": 43799906,
+   "crc32": 3372220763,
+   "sha256": "1bedbc811cbd743bfff38ee095b80f67388c4c2e95152308055775bba59a70b9"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02781.txt",
+   "bytes": 43790985,
+   "crc32": 3798078568,
+   "sha256": "e8922e47122f10de3e51db73d4d1611b9f70411e5c08d0465c5ee3f217d445e2"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02782.txt",
+   "bytes": 43784562,
+   "crc32": 725122269,
+   "sha256": "2ac6d377aedb983efc782538ad77482a7780e23f57c3d9b4ff4b63a2bb090cd0"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02783.txt",
+   "bytes": 43796573,
+   "crc32": 1718098470,
+   "sha256": "96ab36c412376ebd83276f6e38d5326432cb2c2081d8078de38824b882bccbcf"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02784.txt",
+   "bytes": 43778955,
+   "crc32": 3297679548,
+   "sha256": "0b09656556fc3b0d029f12d43ae70277f470947dd8962ac412f9da5fdcab48d1"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02785.txt",
+   "bytes": 43785060,
+   "crc32": 3991267822,
+   "sha256": "4277b7c004d1fb56bfd3377c260181eeb55ba56ca20b0223e7d646a5e3e0a642"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02786.txt",
+   "bytes": 43793638,
+   "crc32": 2470809724,
+   "sha256": "2bb71e98f63fe66afc854fe6b1b0c817b72da00a99dcb4fa69613f15b7a0bea0"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02787.txt",
+   "bytes": 43766734,
+   "crc32": 4139565779,
+   "sha256": "bd3952dc86615c7c9d2c0a4ba3971d21a23ba827b21328ca8fcaaf94594ca14f"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02788.txt",
+   "bytes": 43752810,
+   "crc32": 1350705395,
+   "sha256": "a82dbc2a2a00e18ab2edcfb00ce2c293968fa069a45a0d7c7ce75616fc4d11df"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02789.txt",
+   "bytes": 43763687,
+   "crc32": 1233877837,
+   "sha256": "581b7cb29e17b485cd432dc70906a4496c45b432c736715c9ae8611895a819d0"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02790.txt",
+   "bytes": 43767453,
+   "crc32": 2862330184,
+   "sha256": "ccefd2d6c89bd2e703cbb7feebe95e8e5ca139485c835c81460b6034b1dbcf27"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02791.txt",
+   "bytes": 43762318,
+   "crc32": 2935485262,
+   "sha256": "94ed384766374798dd2b9d85042a90f5e5b27b015e4e6b31307b4e7ecc533aac"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02792.txt",
+   "bytes": 43770403,
+   "crc32": 54978684,
+   "sha256": "b5ae8e362b49f5fa713f85b94e1a4f653eddbb4453bfd583b3a0013ef863b623"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02793.txt",
+   "bytes": 43795137,
+   "crc32": 1394190966,
+   "sha256": "c5f088c968d77e6fd0201e7e4d0e5c7e9c53b586c57ceeb850106d2fcacd6013"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02794.txt",
+   "bytes": 43790869,
+   "crc32": 133020568,
+   "sha256": "99b5c2edf346cc2c9d0158bebd826a3c0a8e1fb45eaccb7965ee7dfa7828e385"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02795.txt",
+   "bytes": 43797979,
+   "crc32": 3856684456,
+   "sha256": "e3752ce2a354efc24f4e9528f3788546b1e351cbbc4c7acd1bdf9fc4c13d4a49"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02796.txt",
+   "bytes": 43792535,
+   "crc32": 2930311942,
+   "sha256": "83a942d34cddeab6122abd9b072108e40f7672225c65e9e3dbebcb2cb23dfced"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02797.txt",
+   "bytes": 43791980,
+   "crc32": 1870932005,
+   "sha256": "f5f56b46c8a44e288e7221cbceb98217d4509993f3c5a2f74490ae3f59b73d0a"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02798.txt",
+   "bytes": 43808547,
+   "crc32": 3380447172,
+   "sha256": "c7cb9c1528c5107c6b58383d1ee2face3844a535e18e75cbf3c61b08ca4d3609"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02799.txt",
+   "bytes": 43796262,
+   "crc32": 341650033,
+   "sha256": "1c7583cd0b743312b98af438f1dfd9a1dc0a261c5ca700d217bc97c9158be6e2"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02800.txt",
+   "bytes": 43794124,
+   "crc32": 3724814003,
+   "sha256": "a9f30e19af32d335316a5bde4ea34f2da413e62fbacfc3e1c2c6b7e5090d1134"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02801.txt",
+   "bytes": 43786548,
+   "crc32": 3940919731,
+   "sha256": "2b050c385b0c9e61c02cf874043eb199c2dc6f2eb7285b6bd1a283204c908644"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02802.txt",
+   "bytes": 43798553,
+   "crc32": 4254639919,
+   "sha256": "7d2d7c8a1507e7f4617099f2bdd83514811ecb3d5975fbe2828c82ab9e2d69e4"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02803.txt",
+   "bytes": 43808747,
+   "crc32": 1948863481,
+   "sha256": "6cb773fbff1be16558b35fb75b9eb45e74d6b8ec5dc3719fe8f6fee3aa2c5f4f"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02804.txt",
+   "bytes": 43804056,
+   "crc32": 4224854000,
+   "sha256": "644c8e32b25b422e444c8103fbdfb92cfb83be784d24716df0ba1f514191949f"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02805.txt",
+   "bytes": 43807634,
+   "crc32": 3952833962,
+   "sha256": "b20b3ea4e8b4b67f621ba887d1437e8409cfa273df8cd5f0c0c135cc9bb1aabf"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02806.txt",
+   "bytes": 43787751,
+   "crc32": 3466971465,
+   "sha256": "612e0a38551758da0fa72847909b3873927a464bd17df90e61e17e84f788c868"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02807.txt",
+   "bytes": 43785641,
+   "crc32": 249268622,
+   "sha256": "d97d410d1c3c9db3f77c7f643e1a4f7b9bcc61e7067c7ff1c136de12a844d516"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02808.txt",
+   "bytes": 43780961,
+   "crc32": 302526710,
+   "sha256": "ca2232378d65690c3579b27322385d832c44a922415b64dc7eb7c15cf36f52e0"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02809.txt",
+   "bytes": 43796107,
+   "crc32": 295448808,
+   "sha256": "b0ad3da9ad29995e3421766d71ae550aca752930b2f47924cf00dece6b853d19"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02810.txt",
+   "bytes": 43790903,
+   "crc32": 1872814284,
+   "sha256": "07042be3313d674fd864d90cf1d2feebd9f3700055f7891869049869e9a46491"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02811.txt",
+   "bytes": 43776964,
+   "crc32": 3888957163,
+   "sha256": "99c5c5510c5fd6960bc8f017737b8c6bebb89f9f784ab559242275a60b6e96e7"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02812.txt",
+   "bytes": 43789290,
+   "crc32": 2229773816,
+   "sha256": "c0fa263bf75995d5192fe12f322ad6c0b7a4636e7388fa73ba9730f3bd4dff13"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02813.txt",
+   "bytes": 43793366,
+   "crc32": 1324364920,
+   "sha256": "5572fc13494e9e1aeb1ae7385eb5806aea9b103abb44d3a6f89965ed90349b20"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02814.txt",
+   "bytes": 43796964,
+   "crc32": 60289428,
+   "sha256": "5ff778ee8e694e2cc8a431d325ed454cad5889cadd39eac2758c5c497f283698"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02815.txt",
+   "bytes": 43810663,
+   "crc32": 1466508435,
+   "sha256": "456b4674e3ebdae21610f683bb7dcd2ce08d3c8fe6cb88c7ab83b337f92410c4"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02816.txt",
+   "bytes": 43792551,
+   "crc32": 1270064784,
+   "sha256": "4f25391136cff124d08ca09e891b6e505f51ca41174175bfec3a5f62d51d8bae"
+  },
+  {
+   "archive_entry": "1WT_rand_100_2D/instantaneous/B02817.txt",
+   "bytes": 43786144,
+   "crc32": 2191940272,
+   "sha256": "f28dd5cbe04074518405d8a0f4c9bae78e55ce6de13d8e7bde334a61309629fd"
+  }
+ ],
+ "crop_sha256": "30065790b0dd0d827d3e5ea9c116ff2065820db9ff0f2ce104840d465cd3333a"
+}

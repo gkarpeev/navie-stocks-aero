@@ -152,7 +152,9 @@ def render(name: str, results: Results, directory: Path | None = config.FIGURES)
     fig = FIGURES[name](results)
     if directory is not None:
         directory.mkdir(parents=True, exist_ok=True)
-        fig.savefig(directory / f"{name}.pdf")
+        # Without a creation date an unchanged figure is rewritten byte for byte, so the
+        # repository diff after a rerun of the notebook shows only figures that really changed.
+        fig.savefig(directory / f"{name}.pdf", metadata={"CreationDate": None})
         fig.savefig(directory / f"{name}.png")
     return fig
 

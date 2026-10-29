@@ -21,8 +21,14 @@ NOTEBOOK = ROOT / "lab02_criteria.ipynb"
 def main():
     nb = nbformat.read(NOTEBOOK, as_version=4)
     start = time.perf_counter()
+    # No per-cell execution timestamps: they would change the file on every run; the
+    # time of the run is recorded once, in results/notebook_run.json.
     client = NotebookClient(
-        nb, timeout=1800, kernel_name="python3", resources={"metadata": {"path": str(ROOT)}}
+        nb,
+        timeout=1800,
+        kernel_name="python3",
+        record_timing=False,
+        resources={"metadata": {"path": str(ROOT)}},
     )
     client.execute()
     seconds = time.perf_counter() - start

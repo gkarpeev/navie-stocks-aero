@@ -100,6 +100,14 @@ P_FALSE_KEEP = float(norm.sf(Z_EFF))  # one-sided: a false "keep" also needs the
 Z_FISHER_D = Z_EFF * RATIO["fisher"][2]  # the same rule with the width underestimated
 P_FISHER_D = float(norm.sf(Z_FISHER_D))
 ORDERS = float(np.log10(t("real", "A")["kl_shift"] / t("real", "V")["kl_shift"]))
+# V and D on the experiment: the shift grows with the intervention but saturates below the
+# threshold, because the centre can move at most to zero and zero is within one sigma.
+PLATEAU = {}
+for _e in ("V", "D"):
+    _curves = REP["real"]["curves"][_e]
+    PLATEAU[_e] = max(max(_curves[s]["median"]) for s in ("q", "k"))
+    assert _curves["q"]["median"][-1] > _curves["q"]["median"][0] and PLATEAU[_e] < THRESHOLD
+    assert abs(est("real", _e)[0]) < est("real", _e)[1]
 KL_WINDOW_005 = REP["real"]["curves"]["A"]["q"]["median"][
     REP["real"]["curves"]["A"]["q"]["x"].index(0.05)
 ]
@@ -599,8 +607,10 @@ fig = show("kl_real")
 
 md(rf"""
 $A$ пересекает порог при $q^* = {Q_STAR["q"]:.1e}$ — достаточно испортить ~{max(1, round(Q_STAR["q"] * REP["real"]["meta"]["windows"]))} окна из
-{REP["real"]["meta"]["windows"]}. $V$ и $D$ остаются ниже порога при любых $k$ и $q$: их сдвиг — шум, и он не растёт с силой
-интервенции. Теория $\rho^2 S_A$ совпадает с измерением, начиная с $q \approx 5\cdot10^{{-4}}$; при одном-двух вынесенных окнах
+{REP["real"]["meta"]["windows"]}. $V$ и $D$ остаются ниже порога при любых $k$ и $q$: их сдвиг растёт с силой
+интервенции, но не выше {PLATEAU["V"]:.2f} и {PLATEAU["D"]:.2f}. Это примерно $S_e$ — KL до модели без элемента
+({g3(REP["real"]["removal_kl"]["l2/godambe"]["V"])} и {g3(REP["real"]["removal_kl"]["l2/godambe"]["D"])}): центр может уехать
+самое большее в ноль, а ноль и так ближе σ к оценке. Теория $\rho^2 S_A$ совпадает с измерением, начиная с $q \approx 5\cdot10^{{-4}}$; при одном-двух вынесенных окнах
 отклик зависит от того, какие именно окна попали в выборку.
 
 ### 6.4. Сдвиг и форма: почему в правиле только сдвиг

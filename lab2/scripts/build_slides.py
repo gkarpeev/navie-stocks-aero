@@ -78,6 +78,15 @@ def numbers(R: report.Results) -> dict[str, str]:
         rep["syn_a"]["critical_q"]["A"]["q"]["upper_bound"]
         and rep["syn_a"]["critical_q"]["V"]["q"]["upper_bound"]
     )
+    # "V and D: the shift grows with the intervention but stays below the threshold,
+    # since the centre can move at most to zero and zero is within one sigma"
+    plateau = {}
+    for e in ("V", "D"):
+        curves = rep["real"]["curves"][e]
+        plateau[e] = max(max(curves[s]["median"]) for s in ("q", "k"))
+        assert curves["q"]["median"][-1] > curves["q"]["median"][0] and plateau[e] < THRESHOLD
+        mean, sigma = est("real", e)
+        assert abs(mean) < sigma
 
     rho = attenuation(10.0, 1.0)
     z_eff = float(np.sqrt(2 * THRESHOLD) / rho)
@@ -144,6 +153,8 @@ def numbers(R: report.Results) -> dict[str, str]:
         "HuberShiftA": f"{abs(est('real', 'A', 'huber/godambe')[0] - est('real', 'A')[0]) / est('real', 'A')[1]:.1f}",
         "VinSigma": f"{1 / est('real', 'V')[1]:.2f}",
         "OrdersAV": f"{np.log10(test('real', 'A')['kl_shift'] / test('real', 'V')['kl_shift']):.1f}",
+        "RealPlateauV": f"{plateau['V']:.2f}",
+        "RealPlateauD": f"{plateau['D']:.2f}",
         "GridSigmaReal": f"{sig_grid.mean():.2f}",
         "LeafLossMin": f"{min(losses):.0f}",
         "LeafLossMax": f"{float(f'{max(losses):.1g}'):.0f}",  # one significant digit: a range, not a measurement
